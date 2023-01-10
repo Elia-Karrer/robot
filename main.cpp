@@ -6,7 +6,6 @@
 #include <Arduino.h>
 #include <FastLED.h>
 #include <PS4Controller.h>
-#include <WiFi.h>
 
 
 #define PIN_BATTERY 	            39
@@ -328,7 +327,6 @@ void controller_drive(void)
 void sleep(void)
 {
     set_leds(0xFF00);                                               // Set LED status to red (WARNING)
-    WiFi.mode(WIFI_OFF);                                            // Turn off WiFi
     btStop();                                                       // Turn off Bluetooth                                             
     motor_both(0);                                                  // Turn off Motors
 
