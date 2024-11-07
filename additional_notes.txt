@@ -1,0 +1,11 @@
+Sixaxis-Pair-Tool kann probleme machen, da folgendes passieren kann:
+	1. Schreibt: 11:11:11:11:11:11
+	2. Angezeigt wird: 11:11:11:11:11:11
+	3. Verbindung geht nicht
+Dies liegt möglicherweise daran, dass das Tool nicht richtig schreibt.
+Auslesen der MAC kann es jedoch immer fehlerfrei.
+
+Lösung: PS4-Controller durch halten von SHARE und PS-Taste mit Computer oder PS4 verbinden.
+        Somit wird MAC-Addresse neu gesetzt. Diese wird dann mit SixAxisPairTool ausgelesen.
+        Die ausgelesene MAC wird dann im Code verwendet.
+
